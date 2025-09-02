@@ -1,0 +1,369 @@
+* {
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.all-contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: #1e1e1e;
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+    box-shadow: #1e1e1e;
+    height: 100vh;
+
+    text-align: center;
+    /* position: fixed; */
+}
+
+.main_contents {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    width: 58vw;
+    box-shadow: #1e1e1e;
+    height:fit-content;
+    min-height: 100vh;
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
+
+.data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .piechart {
+    background-color: #595858;
+    padding: 5px;
+    /* padding-left: 20px; */
+    /* border-radius: 10px; */
+    /* width: 400px; */
+    /* box-shadow: #1e1e1e; */
+    /* text-align: center; */
+    /* height: 200px; */
+/* } */
+
+/* .linechart {
+    background-color: #595858;
+    padding: 5px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: #1e1e1e;
+    height: 200PX;
+    text-align: center;
+} */
+.piechart, .linechart {
+    background-color: #595858;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    height: 240px; /* charts will scale */
+    margin: 10px;
+    text-align: center;
+    position: relative;
+}
+.piechart canvas,
+.linechart canvas {
+    width: 100% !important;
+    height: 85% !important;
+}
+
+
+
+ul {
+    list-style-type: none;
+
+}
+
+li {
+    margin-left: 8px;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    width: fit-content;
+    /* border: 1px solid #ffffff;
+    border-color: #ffffff; */
+    border-radius: 10px;
+}
+
+li:first-child {
+    margin-top: 50px;
+}
+
+.add-login-btn {
+    margin-top: 200px;
+    margin-left: 8px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #595858;
+    border-radius: 10px;
+    border: none;
+}
+
+.add-login-btn:hover {
+    cursor: pointer;
+}
+
+li:hover {
+
+    width: fit-content;
+    color: aqua;
+    background: #8a8a8a;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+
+
+thead,
+tfoot {
+    background-color: bisque;
+    color: #121212
+}
+
+th,
+td {
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
+
+}
+
+td:last-of-type {
+    text-align: center;
+}
+
+tbody>tr:nth-of-type(even) {
+    background-color: #1e1e1e;
+}
+
+tfoot th {
+    text-align: right;
+}
+
+tfoot td {
+    font-weight: bold;
+}
+
+.Categoryinput {
+    background: #1e1e1e;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.Month {
+    background: #1e1e1e;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+input[type="text"] {
+    background-color: black;
+    color: white;
+    padding-left: 10px;
+
+    border-radius: 20px;
+    border: none;
+    width: 38vw;
+    height: 30px;
+
+}
+.send-button{
+    padding: 10px;
+    background-color: #6f6e6e;
+    border-radius: 10px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.search {
+    background-color: #6f6e6e;
+    color: white;
+    /* border-color: #121212; */
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    border: 3px solid white;
+
+}
+
+.delete-btn {
+    color: white;
+    background-color: rgb(253, 24, 24);
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.delete-btn:hover {
+    cursor: pointer;
+    background-color: red;
+    text-decoration: underline;
+    text-decoration-color: white;
+
+}
+
+.horizontal_div {
+    display: flex;
+}
+
+input[type="date"],
+input[type="number"] {
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+.data-input-btn{
+    background-color: #6f6e6e;
+    color: white;
+    padding: 8px;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+}
+.login{
+    background-color: gray;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30vw;
+    box-shadow: white;
+    height: fit-content;
+    
+
+}
+.Password ,.email {
+    display:flex;
+    width: 10vw;
+    background-color: black;
+    color: white;
+    padding-left: 10px;
+
+    border-radius: 20px;
+    border: none;
+    /* width: 38vw; */
+    height: 30px;
+    
+}
+.form-login-btn{
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 30%;
+    border: none;
+    width: 10%;
+
+}
+.income{
+    background-color: gray;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30vw;
+    box-shadow: white;
+    height: fit-content;
+    
+
+}
+
+.amount ,.SOURCE {
+    display:flex;
+    width: 10vw;
+    background-color: black;
+    color: white;
+    padding-left: 10px;
+
+    border-radius: 20px;
+    border: none;
+    /* width: 38vw; */
+    height: 30px;
+    
+}
+.add-income-btn{
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 30%;
+    border: none;
+    width: 10%;
+    cursor: pointer;
+
+}
+.h1-login-heading{
+    text-align: center;
+}
+.finance-heading{
+    text-align: center;
+}
+.image-login-btn{
+    height: 55px;
+    width: 55px;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+}
+
+
+.image-login-btn:hover{
+    cursor:pointer
+}
+
+.add-category-btn{
+    background-color:blue;
+    color: white;
+    
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.categories-input{
+    background-color: #595858;
+    padding: 5px;
+    border-radius: 10px;
+    width: 500px;
+    box-shadow: #1e1e1e;
+    text-align: center;
+    height: 246px;
+    margin-left: 23%;
+    margin-top: 25%;
+}

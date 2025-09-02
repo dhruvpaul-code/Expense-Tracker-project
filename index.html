@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FINANCE TRACKING</title>
+    <link rel="stylesheet" href="gdsc.css" />
+
+
+</head>
+
+<body>
+
+
+    <!-- ALL IN ONE DIV -->
+
+    <div class="all-contents" id="all-contents">
+
+        <!-- SIDEBAR DIV -->
+        <div class="sidebar" id="sidebar">
+            <ul>
+                <li id="Dashboard" class="add-dashboard-btn">Dashboard</li>
+                <li id="Add Expense" class="add-expense-btn">Add Expense</li>
+                <li id="Add Income" class="add-income-nav-btn">Add Income</li>
+                <li id="Categories" class="Categories-btn">Categories</li>
+                <li id="Reports" class="reports-btn">Reports</li>
+                <li id="ask-ai-btn" class="askgemini-btn">Ask Gemini</li>
+                <button class="add-login-btn" id="login">Log IN</button>
+            </ul>
+        </div>
+
+        <!-- MAIN DIV  -->
+        <div class="main_contents" id="main_contents">
+
+
+            <h1 class="finance-heading" ID="finance-tracking" style="display: none;">FINANCE TRACKING WEBSITE</h1>
+            <!-- NAV BAR -->
+            <nav class="navbar " id="navbar">
+                <form class="form1">
+                    <input type="text" placeholder="Search" />
+                </form>
+                <button class="image-login-btn"><img src="profile.svg.svg" alt="profile"></button>
+            </nav>
+            <h2 id="dashboard-heading">Dashboard</h2>
+            <!-- Add LOGIN DIV(hidden initially) -->
+            <div class="login" id="LOGIN" style="display:none;">
+                <h1 class="h1-login-heading">LOGIN PAGE</h1>
+                <form><label>Email:</label>
+                    <input type="email" id="email" class="email" placeholder="Email" required>
+                    <label>Password:</label>
+                    <input type="text" id="Password" class="Password" placeholder="Password" required>
+                    <button id="form-login-btn" class="form-login-btn">Log In</button>
+                </form>
+            </div>
+
+
+            <!-- Add INCOME DIV(hidden initially) -->
+            <div class="income" id="income" style="display:none;">
+                <h1 class="h1-login-heading">ADD YOUR INCOME</h1>
+                <form id="addincome"><label>AMOUNT:</label>
+                    <input type="number" name="amountincome" id="amountincome" class="amountincome" placeholder="AMOUNT"
+                        required>
+                    <label>SOURCE:</label>
+                    <input type="text" id="SOURCE" class="SOURCE" placeholder="SOURCE" required>
+                    <button id="add-income-btn" class="add-income-btn">ADD INCOME</button>
+                </form>
+            </div>
+            <div class="table_container" id="table3" style="display: none;">
+                <table class="incometable" border="1" cellspacing="20">
+                    <thead>
+                        <tr>
+                            <th scope="row" colspan="1">Amount</th>
+                            <th scope="row" colspan="1">Source</th>
+                            <th scope="row" colspan="1">Action</th>
+
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                    </tbody>
+
+                </table>
+            </div>
+
+            <!-- ASK GEMINI DIV -->
+            <div id="ai-div" style="display:none; padding:20px; border:1px solid #ccc; width:800px; margin-top:20px; border-radius: 10px; ;">
+                <h3>💬 Ask GEMINI</h3>
+                <textarea id="user-input" placeholder="Type your question..."
+                    style="width:100%; height:60px; background-color: #e0dbdb; color: black; font-size: x-large; border-radius: 10px;"></textarea>
+                <button id="send-btn" class="send-button">Send</button>
+                <div id="ai-response" style="margin-top:10px; padding:10px; background:#f9f9f9; border-radius:5px; color:black; border-radius: 10px;" >
+                </div>
+            </div>
+
+            <!-- Add Expense Form (hidden initially) -->
+            <div id="addExpenseForm" style="display: none; margin-top: 20px;">
+                <h3>Add New Expense</h3>
+                <form id="expenseForm">
+                    <label>Date:</label>
+                    <input type="date" name="date" required><br><br>
+
+                    <label>Amount:</label>
+                    <input type="number" name="amount" required><br><br>
+
+                    <label id="Category">Category:</label>
+                    <select class="Categoryinput" name="category" id="expense-category" required>
+                        <option>Category</option>
+                        <option>Food</option>
+                        <option>Transport</option>
+                        <option>Grocery</option>
+                        <option>Entertainment</option>
+                    </select><br><br>
+
+                    <label>Notes:</label>
+                    <input type="text" name="notes" placeholder="Enter Remarks:"><br><br>
+
+                    <button class="data-input-btn" type="submit">Add Expense</button>
+                </form>
+            </div>
+
+
+            <!-- Add Category Form (hidden initially) -->
+            <div class="categories-input" id="categories-input" style="display: none;">
+                <h1>ADD NEW CATEGORY</h1>
+
+                <form id="category-form">
+
+                    <label id="mr-category">Category:</label>
+                    <input type="text" id="category-data" placeholder="Enter Category To Add:" required>
+                    <button class="add-category-btn" id="add-category-btn">ADD CATEGORY</button>
+
+                    <select class="Categoryinput" id="added-category">
+                        <option value="all">Category </option>
+                        <option value="all">Food </option>
+                        <!-- <option value="all">Salary </option> -->
+                        <option value="all">GROCERY </option>
+                        <option value="all">TRANSPORT </option>
+                        <option value="all">Entertainment </option>
+
+                    </select>
+                </form>
+
+            </div>
+
+            <!-- CHARTS DIV  -->
+            <div class="data" id="data">
+                <!-- PIECHART DIV -->
+                <div class="piechart" id="piechart">
+                    <h3>Expense By Category</h3>
+                    <canvas id="expensePieChart"></canvas>
+
+
+                </div>
+                <!-- LINECHART DIV -->
+                <div class="linechart" id="linechart">
+                    <h3>Income vs Expense</h3>
+                    <canvas id="incomeLineChart"></canvas>
+                </div>
+            </div>
+
+            <!-- TRANSACTION LOG DIV (HORIZONTAL DIV) -->
+            <div class="horizontal_div" id="table1">
+
+                <h1>TRANSACTION LOG</h1>
+                <form class="form2">
+
+                    <select name="category" class="Categoryinput" id="category">
+                        <option value="all">Category</option>
+                        <option value="all">Food</option>
+                        <option value="all">Salary</option>
+                        <option value="all">GROCERY</option>
+                        <option value="all">TRANSPORT</option>
+                        <option value="all">Entertainment</option>
+                    </select>
+
+                    <select name="Month" class="Month" id="Month">
+                        <option value="all">Month</option>
+                        <option value="jan">JAN</option>
+                        <option value="feb">FEB</option>
+                        <option value="mar">MAR</option>
+                        <option value="apr">APR</option>
+                        <option value="jun">JUN</option>
+                        <option value="jul">JUL</option>
+                        <option value="aug">AUG</option>
+                        <option value="sept">SEPT</option>
+                        <option value="oct">OCT</option>
+                        <option value="nov">NOV</option>
+                        <option value="dec">DEC</option>
+                    </select>
+                    <button class="search">search</button>
+                </form>
+            </div>
+
+            <!-- TABLE DIV  -->
+
+            <div class="table_container" id="table2">
+                <table class="expensetable" border="1" cellspacing="20">
+                    <thead>
+                        <tr>
+                            <th scope="row" colspan="1">Date</th>
+                            <th scope="row" colspan="1">Category</th>
+                            <th scope="row" colspan="1">Amount</th>
+                            <th scope="row" colspan="3">Remark</th>
+                            <th scope="row" colspan="1">Action</th>
+
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+        <script src="gdsc.js">
+
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="chart.js"></script>
+        <script  src="ai_integrate.js"></script>
+
+
+</body>
+
+</html>
