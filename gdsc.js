@@ -16,7 +16,7 @@ document
     document.getElementById("income").style.display = "none";
     document.getElementById("table3").style.display = "none";
     document.getElementById("ai-div").style.display = "none";
-    document.getElementById("sidebar-btn-hide").style.display = "block";
+    
     
     
     
