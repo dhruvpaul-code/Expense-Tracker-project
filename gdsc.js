@@ -16,6 +16,9 @@ document
     document.getElementById("income").style.display = "none";
     document.getElementById("table3").style.display = "none";
     document.getElementById("ai-div").style.display = "none";
+    document.getElementById("sidebar-btn-hide").style.display = "block";
+    
+    
     
   });
 
@@ -111,9 +114,9 @@ document
     document.getElementById("finance-tracking").style.display = "";
     document.getElementById("LOGIN").style.marginTop = "20%";
     document.getElementById("LOGIN").style.marginLeft = "22%";
-    document.getElementById("Password").style.width = "21vw";
-    document.getElementById("email").style.width = "21vw";
-    document.getElementById("form-login-btn").style.width = "7vw";
+    document.getElementById("Password").style.width = "251px";
+    document.getElementById("email").style.width = "251px";
+    document.getElementById("form-login-btn").style.width = "84px";
     document.getElementById("categories-input").style.display = "none";
     document.getElementById("table3").style.display = "none";
     document.getElementById("ai-div").style.display = "none";
@@ -249,13 +252,12 @@ document.querySelector(".reports-btn").addEventListener("click", () => {
   document.getElementById("LOGIN").style.display = "none";
   document.getElementById("ai-div").style.display = "none";
   document.getElementById("finance-tracking").style.display = "none";
-  document.getElementById("LOGIN").style.marginTop = "20%";
-  document.getElementById("LOGIN").style.marginLeft = "22%";
+  
   document.getElementById("piechart").style.width = "50vw";
   document.getElementById("linechart").style.width = "50vw";
   document.getElementById("data").style.display = "block";
   document.getElementById("linechart").style.marginTop = "50px";
-  document.getElementById("form-login-btn").style.width = "7vw";
+  
   document.getElementById("categories-input").style.display = "none";
   document.getElementById("income").style.display = "none";
 });
@@ -280,7 +282,18 @@ document.querySelector(".Categories-btn").addEventListener("click", () => {
   document.getElementById("mr-category").style.marginRight = "0";
   document.getElementById("income").style.display = "none";
 });
-
+//  TO OPEN SIDEBAR
+document.querySelector(".sidebar-btn-hide").addEventListener("click",()=>{
+  document.getElementById("sidebar").style.display="block";
+  document.getElementById("close-window").style.display="block";
+  document.getElementById("close-window").style.marginLeft="45px";
+  
+});
+//  TO Close SIDEBAR
+document.querySelector(".close-window").addEventListener("click", () => {
+  document.getElementById("sidebar").style.display = "none";
+  document.getElementById("close-window").style.display = "none";
+});
 // TO ADD CATEGORY
 
 const form2 = document.getElementById("category-form");
