@@ -607,8 +607,8 @@ input[type="number"],.notes , .category-data-add{
     }
     .piechart,.linechart{
         text-align: start;
-        position:unset;
-        width: 400px;
+        
+        width: 300px !important;
         margin-top: 10px;
     }
     .piechart canvas{
@@ -616,9 +616,7 @@ input[type="number"],.notes , .category-data-add{
         width: 130px !important;
 
     }
-    .piechart{
-        width: 400px;
-    }
+    
     .image-login-btn{
         height: 55px;width: 55px;
     }
@@ -665,5 +663,8 @@ input[type="number"],.notes , .category-data-add{
     }
     .income-table{
         width: 290px !important;
+    }
+    .SOURCE{
+        width: 197px !important;
     }
 }
