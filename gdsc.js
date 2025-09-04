@@ -9,8 +9,8 @@ document
     document.getElementById("LOGIN").style.display = "none";
     document.getElementById("piechart").style.display = "none";
     document.getElementById("linechart").style.display = "none";
-    document.getElementById("piechart").style.width = "21vw";
-    document.getElementById("linechart").style.width = "21vw";
+    document.getElementById("navbar").style.display = "";
+    document.getElementById("finance-tracking").style.display = "none";
     document.getElementById("data").style.display = "flex";
     document.getElementById("categories-input").style.display = "none";
     document.getElementById("income").style.display = "none";
@@ -92,7 +92,7 @@ document
     document.getElementById("piechart").style.width = "400px";
     document.getElementById("linechart").style.width = "400px";
     document.getElementById("data").style.display = "flex";
-    document.getElementById("linechart").style.marginTop = "10px";
+    
     document.getElementById("categories-input").style.display = "none";
     document.getElementById("income").style.display = "none";
     document.getElementById("table3").style.display = "none";
@@ -109,14 +109,10 @@ document
     document.getElementById("piechart").style.display = "none";
     document.getElementById("linechart").style.display = "none";
     document.getElementById("dashboard-heading").style.display = "none";
-    document.getElementById("navbar").style.display = "none";
+    document.getElementById("navbar").style.display = "";
     document.getElementById("LOGIN").style.display = "";
     document.getElementById("finance-tracking").style.display = "";
-    document.getElementById("LOGIN").style.marginTop = "20%";
-    document.getElementById("LOGIN").style.marginLeft = "22%";
-    document.getElementById("Password").style.width = "251px";
-    document.getElementById("email").style.width = "251px";
-    document.getElementById("form-login-btn").style.width = "84px";
+    
     document.getElementById("categories-input").style.display = "none";
     document.getElementById("table3").style.display = "none";
     document.getElementById("ai-div").style.display = "none";
@@ -134,14 +130,10 @@ document.querySelector(".image-login-btn").addEventListener("click", () => {
   document.getElementById("table3").style.display = "none";
   document.getElementById("linechart").style.display = "none";
   document.getElementById("dashboard-heading").style.display = "none";
-  document.getElementById("navbar").style.display = "none";
+  document.getElementById("navbar").style.display = "";
   document.getElementById("LOGIN").style.display = "";
   document.getElementById("finance-tracking").style.display = "";
-  document.getElementById("LOGIN").style.marginTop = "20%";
-  document.getElementById("LOGIN").style.marginLeft = "22%";
-  document.getElementById("Password").style.width = "21vw";
-  document.getElementById("email").style.width = "21vw";
-  document.getElementById("form-login-btn").style.width = "7vw";
+  
   document.getElementById("categories-input").style.display = "none";
   document.getElementById("income").style.display = "none";
   document.getElementById("ai-div").style.display = "none";
@@ -158,18 +150,13 @@ document
     document.getElementById("piechart").style.display = "none";
     document.getElementById("linechart").style.display = "none";
     document.getElementById("dashboard-heading").style.display = "none";
-    document.getElementById("navbar").style.display = "none";
+    document.getElementById("navbar").style.display = "";
     document.getElementById("LOGIN").style.display = "none";
     document.getElementById("ai-div").style.display = "none";
-    document.getElementById("finance-tracking").style.display = "";
+    document.getElementById("finance-tracking").style.display = "none";
     document.getElementById("income").style.display = "";
     document.getElementById("table3").style.display = "";
-    document.getElementById("income").style.marginTop = "6%";
-    document.getElementById("income").style.marginBottom = "8%";
-    document.getElementById("income").style.marginLeft = "22%";
-    document.getElementById("amountincome").style.width = "21vw";
-    document.getElementById("SOURCE").style.width = "21vw";
-    document.getElementById("add-income-btn").style.width = "7vw";
+    
     document.getElementById("categories-input").style.display = "none";
     
   });
@@ -185,7 +172,7 @@ document
     document.getElementById("piechart").style.display = "none";
     document.getElementById("linechart").style.display = "none";
     document.getElementById("dashboard-heading").style.display = "none";
-    document.getElementById("navbar").style.display = "none";
+    document.getElementById("navbar").style.display = "";
     document.getElementById("LOGIN").style.display = "none";
     document.getElementById("finance-tracking").style.display = "none";
     document.getElementById("income").style.display = "none";
@@ -247,17 +234,12 @@ document.querySelector(".reports-btn").addEventListener("click", () => {
   document.getElementById("piechart").style.display = "";
   document.getElementById("linechart").style.display = "";
   document.getElementById("dashboard-heading").style.display = "none";
-  document.getElementById("navbar").style.display = "none";
+  document.getElementById("navbar").style.display = "";
   document.getElementById("table3").style.display = "none";
   document.getElementById("LOGIN").style.display = "none";
   document.getElementById("ai-div").style.display = "none";
   document.getElementById("finance-tracking").style.display = "none";
-  
-  document.getElementById("piechart").style.width = "50vw";
-  document.getElementById("linechart").style.width = "50vw";
   document.getElementById("data").style.display = "block";
-  document.getElementById("linechart").style.marginTop = "50px";
-  
   document.getElementById("categories-input").style.display = "none";
   document.getElementById("income").style.display = "none";
 });
@@ -271,14 +253,12 @@ document.querySelector(".Categories-btn").addEventListener("click", () => {
   document.getElementById("ai-div").style.display = "none";
   document.getElementById("linechart").style.display = "none";
   document.getElementById("dashboard-heading").style.display = "none";
-  document.getElementById("navbar").style.display = "none";
+  document.getElementById("navbar").style.display = "";
   document.getElementById("table3").style.display = "none";
   document.getElementById("LOGIN").style.display = "none";
   document.getElementById("finance-tracking").style.display = "none";
   document.getElementById("categories-input").style.display = "";
-  document.getElementById("category-data").style.width = "23vw";
-  document.getElementById("add-category-btn").style.marginTop = "26px";
-  document.getElementById("added-category").style.marginTop = "26px";
+  
   document.getElementById("mr-category").style.marginRight = "0";
   document.getElementById("income").style.display = "none";
 });

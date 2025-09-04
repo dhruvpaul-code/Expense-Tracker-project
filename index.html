@@ -38,9 +38,9 @@
             <h1 class="finance-heading" ID="finance-tracking" style="display: none;">FINANCE TRACKING WEBSITE</h1>
             <!-- NAV BAR -->
             <nav class="navbar" id="navbar">
-                <button class="sidebar-btn-hide" id="sidebar-btn-hide">Dasboard</button>
+                <button class="sidebar-btn-hide" id="sidebar-btn-hide">MENU</button>
                 <form class="form1">
-                    <input type="text" placeholder="Search" />
+                    <input class="navbar-search" type="text" placeholder="Search" />
                 </form>
                 <button class="image-login-btn"><img src="profile.svg.svg" alt="profile"></button>
             </nav>
@@ -87,7 +87,7 @@
             </div>
 
             <!-- ASK GEMINI DIV -->
-            <div id="ai-div" style="display:none; padding:20px; border:1px solid #ccc; width:800px; margin-top:20px; border-radius: 10px; ;">
+            <div class="ai-div" id="ai-div" style="display:none; padding:20px; border:1px solid #ccc; width:800px; margin-top:20px; border-radius: 10px; ;">
                 <h3>💬 Ask GEMINI</h3>
                 <textarea id="user-input" placeholder="Type your question..."
                     style="width:100%; height:60px; background-color: #e0dbdb; color: black; font-size: x-large; border-radius: 10px;"></textarea>
@@ -116,7 +116,7 @@
                     </select><br><br>
 
                     <label>Notes:</label>
-                    <input type="text" name="notes" placeholder="Enter Remarks:"><br><br>
+                    <input class="notes" type="text" name="notes" placeholder="Enter Remarks:"><br><br>
 
                     <button class="data-input-btn" type="submit">Add Expense</button>
                 </form>
@@ -130,13 +130,12 @@
                 <form id="category-form">
 
                     <label id="mr-category">Category:</label>
-                    <input type="text" id="category-data" placeholder="Enter Category To Add:" required>
+                    <input class="category-data-add" type="text" id="category-data" placeholder="Enter Category To Add:" required>
                     <button class="add-category-btn" id="add-category-btn">ADD CATEGORY</button>
 
                     <select class="Categoryinput" id="added-category">
                         <option value="all">Category </option>
                         <option value="all">Food </option>
-                        <!-- <option value="all">Salary </option> -->
                         <option value="all">GROCERY </option>
                         <option value="all">TRANSPORT </option>
                         <option value="all">Entertainment </option>
