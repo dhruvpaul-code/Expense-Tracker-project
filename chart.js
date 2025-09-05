@@ -28,7 +28,7 @@ const expensePieChart = new Chart(pieCtx, {
   },
 });
 
-// Line Chart (Income vs Expense over time)
+// bar Chart (Income vs Expense over time)
 const lineCtx = document.getElementById("incomeLineChart").getContext("2d");
 const incomeLineChart = new Chart(lineCtx, {
   type: "bar",
