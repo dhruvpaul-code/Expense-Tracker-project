@@ -1,5 +1,5 @@
 // 🔑 Replace with your actual Gemini API Key
-const API_KEY = "AIzaSyA3_nxBo_bHM4-VbHEfQeIsuUx13XTvBYA";
+const API_KEY = "AIzaSyCSqMdW4giADOg8Veo3JLsWRVHthalZDnY";
 
 
 // Show/Hide AI Div
@@ -36,14 +36,14 @@ document.getElementById("send-btn").addEventListener("click", async () => {
     });
   });
 
-  const prompt = `You are an expense tracker expert. Here is my expense data and income data respectively: ${JSON.stringify(
+  const prompt = `You are an expense tracker expert. Here is my expense data and income data in rupees respectively: ${JSON.stringify(
     tableData)} ${JSON.stringify(incometabledata)}. Now answer this: ${query}`;
 
   responseDiv.innerHTML = "⏳ Thinking...";
 
   try {
     const res = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`,
+      `https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent?key=${API_KEY}`,
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },

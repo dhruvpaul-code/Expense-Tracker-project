@@ -584,11 +584,17 @@ input[type="number"],.notes , .category-data-add{
     }
 }
 @media(max-width:500px){
-    table{
+    .expensetable{
         margin-left: 0;
-        width: 200px;
+        width: 320px;
         font-size: 10px;
     }
+    .incometable{
+        margin-left: 0;
+        width: 340px;
+        font-size: 15px;
+    }
+    
     .main_contents{
         width: 395px;
     }
